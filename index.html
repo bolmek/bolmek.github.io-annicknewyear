@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonne Année 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(190deg, #f70707 30%, #f8f6f6 30%);
+            min-height: 100vh;
+            padding: 5px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(127, 93, 175, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 5);
+        }
+
+        h1 {
+            text-align: center;
+            color: #b50f7b;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+            letter-spacing: 2px;
+        }
+
+        .top-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            gap: 20px;
+        }
+
+        .image-box {
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            left: 5%;
+        }
+        .image-box {
+            width: 10px;
+            height: 10px;
+            position: 1000000px;
+            right: 5%;
+        }
+
+        .center-name {
+            flex: 1;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            color: #67e3ec;
+            background: #232323;
+            text-shadow: 0 0 5px #ee94d3, 0 0 10px #ee94d3, 0 0 15px #ee94d3, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+
+        }
+
+        .heart-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 50px 0;
+            position: relative;
+        }
+
+        .love-text {
+            font-size: 1.8em;
+            color: #A7DD3C;
+            background: #fbfbfc;
+            text-shadow: 2px 0 0px #800040, 3px 2px 0px
+            rgba(77,0,38,0.5), 3px 0 3px #FF002B,
+            5px 0 3px #800015, 6px 2px 3px rgba(77,0,13,0.5),
+            6px 0 9px #FF5500, 8px 0 9px #802A00,
+            9px 2px 9px rgba(77,25,0,0.5), 9px 0 18px #FFD500,
+            11px 0 18px #806A00, 12px 2px 18px
+            rgba(77,66,0,0.5), 12px 0 30px #D4FF00,
+            14px 0 30px #6A8000, 15px 2px 30px rgba(64,77,0,0.5),
+            15px 0 45px #80FF00, 17px 0 45px #408000,
+            17px 2px 45px rgba(38,77,0,0.5);
+            font-weight: bold;
+            transform: rotate(-35deg);
+        }
+
+        .love-left {
+            position: absolute;
+            left: 5%;
+        }
+
+        .love-right {
+            position: absolute;
+            right: 5%;
+        }
+
+
+
+        .text-section {
+            margin-top: 50px;
+            padding: 30px;
+            background: #0d74c7;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .text-section h2 {
+            color: gold;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .text-section p {
+            color: gold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .audio-section {
+            margin-top: 0px;
+            padding: 10px;
+            background: linear-gradient(135deg, white 0%, white 100%);
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .audio-section h2 {
+            color: rgb(121, 40, 127);
+            font-size: 1.8em;
+            margin-bottom: 25px;
+        }
+
+        .audio-controls {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .audio-item {
+            background: rgba(131, 56, 131, 0.95);
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .audio-item h3 {
+            color: #8f4dd1;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        audio {
+            width: 50%;
+            outline: none;
+        }
+
+        @media (max-width: 400px) {
+            .top-section {
+                flex-direction:relative;
+            }
+
+            .image-box {
+                flex: 0 0 auto;
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .center-name {
+                font-size: 1.5em;
+            }
+
+            .love-text {
+                font-size: 1.3em;
+            }
+
+            .love-left {
+                left: 5%;
+            }
+
+            .love-right {
+                right: 5%;
+            }
+        }
+
+
+
+
+
+
+.heart
+{
+    position: relative;
+    width: 300px;
+    height:300px;
+}
+.heart::before
+{
+    content:'';
+    position:absolute;
+    top: -10px;
+    left: 20px;
+    width:200px;
+    height:300px;
+    background: #6A1629;
+    border-top-left-radius:100px;
+    border-top-right-radius: 100px;
+    rotate: 315deg;
+    z-index:1000;
+    animation: animateHeart 2s steps(1) infinite;
+}
+.heart::after
+{
+    content:'';
+    position:absolute;
+    top: -10px;
+    left: 90px;
+    width:200px;
+    height:300px;
+    background: #6A1629;
+    border-top-left-radius:100px;
+    border-top-right-radius: 100px;
+    rotate: 45deg;
+    z-index:1000;
+    animation: animateHeart 2s steps(1) infinite;
+}
+@keyframes animateHeart
+{0%,94%,100%
+    {
+        filter:none;
+    }
+        95%
+    {
+        filter:drop-shadow(0 0 50px #f00)drop-shadow(0 0 150px #f00);
+        background: #f00;
+    }
+}
+.drop
+{
+    position: absolute;
+    top: 40px;
+    width: 30px;
+    height: 30px;
+    filter: drop-shadow(5px 5px 10px #000) drop-shadow(0px 0px 10px #f00);
+    transform-origin: bottom;
+    animation: animate 4s linear forwards;
+}
+.drop::before
+{
+    content:'';
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    background: #f00;
+    border-top-left-radius:20px ;
+    border-bottom-right-radius: 20px;
+    transform-origin: bottom center;
+    rotate: -55deg;
+    z-index: 100000;
+}
+.drop::after
+{
+    content:'';
+    position: absolute;
+    bottom: 3px;
+    width: 30px;
+    height: 20px;
+    background: #f00;
+    border-top-right-radius:20px ;
+    border-bottom-right-radius: 20px;
+    transform-origin: bottom center;
+    rotate: 315deg;
+    z-index: 100000;
+}
+@keyframes animate
+{
+    0%
+    {
+        top:40px;
+        opacity:1;
+        scale:1;
+    }
+    70%
+    {
+        top:400px;
+        opacity:1;
+    }
+    80%
+    {
+        top: 400px;
+    }
+    100%
+    {
+        top: 400px;
+        opacity: 0;
+        scale:0;
+    }
+}
+canvas{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: -1;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BONNE ET HEUREUSE ANNÉE 2026</h1>
+
+        <div class="top-section">
+            <div class="image-box1">
+                <img src="new year html stuffs/annickOnly.JPG" width="100" height="100" alt="woman portrait">
+            </div>
+
+            <div class="center-name">
+                ANNICK A. TOE
+            </div>
+
+            <div class="image-box2">
+                <img src="new year html stuffs/family.JPG" width="100" height="100" alt="family picture">
+            </div>
+        </div>
+
+        <div class="heart-section">
+            <div class="love-text love-left">LOVE YOU</div>
+            <div class="heart"></div>
+            <div class="love-text love-right">LOVE YOU</div>
+        </div>
+
+        <div class="text-section">
+            <h2>To My Wife</h2>
+            <p>
+
+                I CHOOSE YOU,NOT JUST TODAY OR TOMORROW.
+                BUT EVERY DAY THAT FOLLOWS.
+                EVERY MOMENT, EVERY HEARTBEAT, EVERY BREATH.
+                I CHOOSE YOU THROUGH THE HIGHS AND LOWS,
+                THROUGH LAUGHTER AND TEARS, THROUGH EVERY TWIST
+                AND TURN OF LIFE'S JOURNEY, I CHOOSE YOU.
+                I'LL CHOOSE YOU OVER AND OVER AGAIN, WITHOUT
+                HESITATION, WITHOUT A SHADOW OF DOUBT.
+                I LOVE YOU, ALWAYS & FOREVER
+            </p>
+        </div>
+
+
+
+<script>
+    function rain(){
+        let heart=document.querySelector(".heart");
+        let e=document.createElement('div');
+        e.classList.add('drop');
+        heart.appendChild(e);
+
+
+        let left = Math.floor(Math.random()*300);
+        let duration = Math.random()*0.5;
+
+        e.style.left= left + 'px';
+        e.style.animationDuration = 4+duration+'s';
+
+
+        setTimeout(function(){
+            heart.removeChild(e)
+        },5000);
+    }
+    setInterval(function(){
+        rain()
+    },50);
+
+    
+</script>
+
+
+        <div class="audio-section">
+            <div class="audio-controls">
+                <div class="audio-item">
+                    <h6>🎆</h6>
+                    <audio loop autoplay controls hidden>
+                        <source src="new year html stuffs/firework song.mp3" type="audio/mpeg">
+                        Votre navigateur ne supporte pas l'élément audio.
+                    </audio>
+                </div>
+
+                <div class="audio-item">
+                    <h6>🎉</h6>
+                    <audio autoplay controls hidden>
+                        <source src="new year html stuffs/Christmas_songs_-_Happy_New_Year_(mp3.pm).mp3" type="audio/mpeg">
+                        Votre navigateur ne supporte pas l'élément audio.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+<canvas id="Canvas"></canvas>
+<script>
+    var c=document.getElementById("Canvas");
+var ctx = c.getContext("2d");
+
+var cwidth, cheight;
+var shells = [];
+var pass = [];
+
+var colors = ['#ff5252','#ff4081', '#e040bf', '#7c4dff', '#53dfff', '#40cdff','#18ffff','#64ffda','#69f0ae','#b2ff59'];
+
+window.onresize = function (){
+    reset ();
+}
+reset();
+function reset(){
+    cwidth= window.innerWidth;
+    cheight= window.innerHeight;
+    c.width = cwidth;
+    c.height=cheight;
+}
+function newShell(){
+    var left = (Math.random()>0.5);
+    var shell = {};
+    shell.x = (1*left);
+    shell.y = 1;
+    shell.xoff = (0.01 + Math.random()*0.007)*(left? 1:-1);
+    shell.yoff = 0.01 + Math.random()*0.007;
+    shell.size = Math.random()*6 + 3;
+    shell.color = colors[Math.floor(Math.random()*colors.length)];
+
+    shells.push(shell);
+}
+
+function newPass(shell){
+    var pasCount = Math.ceil(Math.pow(shell.size,2)*Math.PI);
+
+    for (i=0; i < pasCount; i++){
+        var pas = {};
+        pas.x = shell.x * cwidth;
+        pas.y = shell.y * cheight;
+
+        var a = Math.random()*4;
+        var s = Math.random()*10;
+
+        pas.xoff = s * Math.sin((5-a)*(Math.PI/2));
+        pas.yoff = s * Math.sin(a*(Math.PI/2));
+
+        pas.color = shell.color;
+        pas.size = Math.sqrt(shell.size);
+
+        if (pass.length <1000){ pass.push(pas);}
+
+    }
+}
+
+var lastRun = 0;
+Run();
+function Run(){
+    var dt =1;
+    if (lastRun != 0){ dt = Math.min(50, (performance.now() - lastRun));}
+    lastRun = performance.now();
+
+    ctx.fillStyle = "rgba(0,0,0,0.25)";
+    ctx.fillRect(0,0,cwidth,cheight);
+
+    if ((shells.length < 10) && (Math.random() > 0.96)){ newShell();}
+
+    for (let ix in shells){
+        var shell = shells[ix];
+
+        ctx.beginPath();
+        ctx.arc(shell.x*cwidth, shell.y*cheight, shell.size, 0, 2*Math.PI);
+        ctx.fillStyle = shell.color;
+        ctx.fill();
+
+        shell.x -= shell.xoff;
+        shell.y -= shell.yoff;
+        shell.xoff -= (shell.xoff * dt * 0.001);
+        shell.yoff -= ((shell.yoff + 0.2) * dt * 0.00005);
+
+        if (shell.yoff < -0.005){
+            newPass(shell);
+            shells.splice(ix,1);
+        }
+    }
+    for (let ix in pass){
+        var pas = pass[ix];
+
+        ctx.beginPath();
+        ctx.arc(pas.x, pas.y, pas.size, 0,2*Math.PI);
+        ctx.fillStyle = pas.color;
+        ctx.fill();
+
+        pas.x -= pas.xoff;
+        pas.y -= pas.yoff;
+        pas.xoff -= (pas.xoff * dt * 0.001);
+        pas.yoff -= ((pas.yoff + 5)* dt * 0.00005);
+        pas.size -= (dt*0.002*Math.random());
+
+        if ((pas.y > cheight) || (pas.y < -50) || (pas.size <= 0)){
+            pass.splice(ix,1);
+        }
+    }
+    requestAnimationFrame(Run);
+}
+
+</script>
+
+</body>
+</html>
